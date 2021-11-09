@@ -1,7 +1,7 @@
 //helpers
 import { throwError } from './lib/utils';
 import { _validateDatabase } from './lib/validators';
-import firebase from 'firebase/app';
+import firebase from 'firebase/compat/app';
 
 //database
 import _push from './lib/push';
