@@ -23,7 +23,8 @@
     "jasmine-core": "^2.99.1",
     "node-libs-browser": "^1.0.0",
     "react": "^16.4.1",
-    "react-dom": "^16.4.1"
+    "react-dom": "^16.4.1",
+    "webpack": "^3.0.0"
   },
   "scripts": {
     "build": "webpack",
