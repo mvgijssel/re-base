@@ -1,18 +1,18 @@
 var externals = {
   app: {
-    'firebase/app': {
-      root: 'firebase/app',
-      commonjs2: 'firebase/app',
-      commonjs: 'firebase/app',
-      amd: 'firebase/app'
+    'firebase/compat/app': {
+      root: 'firebase/compat/app',
+      commonjs2: 'firebase/compat/app',
+      commonjs: 'firebase/compat/app',
+      amd: 'firebase/compat/app'
     }
   },
   database: {
-    'firebase/database': {
-      root: 'firebase/database',
-      commonjs2: 'firebase/database',
-      commonjs: 'firebase/database',
-      amd: 'firebase/database'
+    'firebase/compat/database': {
+      root: 'firebase/compat/database',
+      commonjs2: 'firebase/compat/database',
+      commonjs: 'firebase/compat/database',
+      amd: 'firebase/compat/database'
     }
   },
   firebase: {
@@ -24,11 +24,11 @@ var externals = {
     }
   },
   firestore: {
-    'firebase/firestore': {
-      root: 'firebase/firestore',
-      commonjs2: 'firebase/firestore',
-      commonjs: 'firebase/firestore',
-      amd: 'firebase/firestore'
+    'firebase/compat/firestore': {
+      root: 'firebase/compat/firestore',
+      commonjs2: 'firebase/compat/firestore',
+      commonjs: 'firebase/compat/firestore',
+      amd: 'firebase/compat/firestore'
     }
   }
 };
@@ -36,7 +36,7 @@ var externals = {
 var loaders = [
   {
     test: /\.js$/,
-    loader: 'babel',
+    loader: 'babel-loader',
     exclude: /node_modules/,
     query: {
       presets: ['es2015']
